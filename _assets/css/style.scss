@@ -11,63 +11,25 @@ $color-active-m: #000;
 
 $font-stack1: "Roboto", "Helvetica", sans-serif;
 $font-stack2: "Playfair Display", "Georgia", serif;
-$color-pmo: #5929B3;
 $color-iot: #FF273E;
-$color-hackindia: #74C600;
-$color-mova1: #29292C;
-$color-jobsplane: #F23515;
-
+$color-pmo: #5929B3;
 $color-iot-grad-bg: linear-gradient(0deg, #FF273E 0%, #FF7957 24%, #FFFFFF 34%);
 $color-iot-grad: linear-gradient(0deg, #FF273E 0%, #FF7957 100%);
 
 .pmo .projecttag{
   background-color: $color-pmo;
 }
+
 .pmo .readmore{
   background-image: url(../../assets/img/grad/pmo.png);
--webkit-box-shadow: 0px 10px 40px -20px $color-pmo;
--moz-box-shadow: 0px 10px 40px -20px $color-pmo;
-box-shadow: 0px 10px 35px -14px $color-pmo;
 }
 
-.ioteractions .projecttag{
-  background-color: $color-iot;
-}
-.ioteractions .readmore{
-  background-image: url(../../assets/img/grad/ioteractions.png);
-  -webkit-box-shadow: 0px 10px 40px -20px $color-iot;
-  -moz-box-shadow: 0px 10px 40px -20px $color-iot;
-  box-shadow: 0px 10px 35px -14px $color-iot;
-}
-
-.hackindia .projecttag{
-  background-color: $color-hackindia;
-}
-.hackindia .readmore{
-  background-image: url(../../assets/img/grad/hackindia.png);
-  -webkit-box-shadow: 0px 10px 40px -20px $color-hackindia;
-  -moz-box-shadow: 0px 10px 40px -20px $color-hackindia;
-  box-shadow: 0px 10px 35px -14px $color-hackindia;
-}
-
-.mova1 .projecttag{
-  background-color: $color-mova1;
-}
-.mova1 .readmore{
-  background-image: url(../../assets/img/grad/mova1.png);
-  -webkit-box-shadow: 0px 10px 40px -20px $color-mova1;
-  -moz-box-shadow: 0px 10px 40px -20px $color-mova1;
-  box-shadow: 0px 10px 35px -14px $color-mova1;
-}
-
-.jobsplane .projecttag{
-  background-color: $color-jobsplane;
-}
-.jobsplane .readmore{
-  background-image: url(../../assets/img/grad/jobsplane.png);
-  -webkit-box-shadow: 0px 10px 40px -20px $color-jobsplane;
-  -moz-box-shadow: 0px 10px 40px -20px $color-jobsplane;
-  box-shadow: 0px 10px 35px -14px $color-jobsplane;
+.ioteractions{
+width: 90vw;
+background-size: 90vw auto;
+background-image: url(../../assets/img/mask.svg);
+background-repeat: no-repeat;
+background-position: top;
 }
 
 .projectname{
@@ -110,7 +72,7 @@ line-height: 28px;
 
 .readmore{
   z-index: 10;
-  background-size: cover;
+  background-size: 360px 60px;
   background-position: bottom;
   background-repeat: no-repeat;
 padding-bottom: 20px;
