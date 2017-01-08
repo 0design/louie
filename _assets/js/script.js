@@ -5,14 +5,3 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-77722386-1', 'auto');
 ga('send', 'pageview');
-
-var win = window,
-    docEl = document.documentElement,
-    $logo = document.getElementById('dis');
-
-win.onscroll = function(){
-   var sTop = (this.pageYOffset || docEl.scrollTop)  - (docEl.clientTop || 0);
-   $logo.style.fontSize =  sTop > 10 ? "0":"32px" ;
-};
-
-window.onload = init();

@@ -1,3 +1,6 @@
+//Todo : Remove unnecessary weights
+
+@import url(https://fonts.googleapis.com/css?family=Space+Mono:400,700);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,800);
 
@@ -11,6 +14,8 @@ $color-active-m: #000;
 
 $font-stack1: "Roboto", "Helvetica", sans-serif;
 $font-stack2: "Playfair Display", "Georgia", serif;
+$font-stack3: "Georgia", serif;
+
 $color-pmo: #5929B3;
 $color-iot: #FF273E;
 $color-hackindia: #74C600;
@@ -100,6 +105,7 @@ letter-spacing: 0;
 
 .projectdesc{
 text-align: left;
+vertical-align: middle;
 padding: 20px 30px 0px 30px;
 opacity: 0.8;
 font-family: Georgia;
@@ -109,19 +115,26 @@ line-height: 28px;
 }
 
 .readmore{
-  z-index: 10;
-  background-size: cover;
+ z-index: 10;
+ bottom:0;
+position: absolute;
+width: 335px;
+background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
 padding-bottom: 20px;
 text-align: right;
-padding-right: 28px;
 padding-top: 36px;
+padding-right: 25px;
 font-family: $font-stack1;
 font-size: 14px;
 color: #FFFFFF;
 letter-spacing: 0;
 border-radius: 0px 0px 16px 16px;
+}
+
+.arrow{
+  padding-right: 20px;
 }
 
 input:focus,
@@ -134,11 +147,7 @@ a{
   text-decoration: none; }
 
 
-.shiftdn{
-  margin-bottom: 8px;
-}
-
-.cardo-b{
+.prefooter{
   margin-top: 16px;
   padding: 4px;
   width: 96vw;
@@ -460,19 +469,19 @@ body {
   font-weight: 800; }
 
 .card {
+  vertical-align: top;
   -webkit-box-shadow: 0px 10px 43px -14px rgba(0,0,0,0.25);
   -moz-box-shadow: 0px 10px 43px -14px rgba(0,0,0,0.25);
   box-shadow: 0px 10px 43px -14px rgba(0,0,0,0.25);
   background-color: #fff;
   border-radius: 15px;
   width: 360px;
-  margin-top: 16px;
+  margin-top: 24px;
   margin-bottom: 0px;
-  margin-left: 8px;
-  margin-right: 8px;
-  height: auto;
+  margin-left: 12px;
+  margin-right: 12px;
+  height: 340px;
   display: inline-block;
-  position: relative;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   -webkit-transition-property: box-shadow, transform;
@@ -794,9 +803,11 @@ hr {
     }
 
   .card{
-width: 90vw;
 margin: auto;
-margin-top: 5vw;
+margin-left: 5vw;
+margin-right: 5vw;
+margin-top: 6vw;
+height: auto;
   }
 /*
 .card img{
@@ -863,6 +874,8 @@ margin-top: 5vw;
 }
 .readmore{
   background-size: 90vw 60px;
+  position: relative;
+  width: auto;
 }
 }
 
