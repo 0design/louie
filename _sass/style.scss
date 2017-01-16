@@ -25,9 +25,20 @@ $color-jobsplane: #F23515;
 $color-delhidribbble: #EC4989;
 $color-bic: #0093E7;
 $color-icons: #3B3F41;
+$color-zomato: #CB202D;
 
 $color-iot-grad-bg: linear-gradient(0deg, #FF273E 0%, #FF7957 24%, #FFFFFF 34%);
 $color-iot-grad: linear-gradient(0deg, #FF273E 0%, #FF7957 100%);
+
+.zomato .projecttag{
+  background-color: $color-zomato;
+}
+.zomato .readmore{
+  background-image: url(../../assets/img/grad/zomato.png);
+-webkit-box-shadow: 0px 15px 45px -25px $color-zomato;
+-moz-box-shadow: 0px 15px 45px -25px $color-zomato;
+box-shadow: 0px 15px 45px -25px $color-zomato;
+}
 
 .icons .projecttag{
   background-color: $color-icons;
@@ -117,6 +128,15 @@ box-shadow: 0px 15px 45px -25px $color-pmo;
   -webkit-box-shadow: 0px 15px 45px -25px $color-jobsplane;
   -moz-box-shadow: 0px 15px 45px -25px $color-jobsplane;
   box-shadow: 0px 15px 45px -25px $color-jobsplane;
+}
+
+.cardsectionlabel{
+  padding: 12px;
+  padding-top: 30px;
+  font-family: $font-stack1;
+  font-weight: 800;
+  font-size: 28px;
+  color: $color-active-d;
 }
 
 .projectname{
