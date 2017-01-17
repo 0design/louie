@@ -26,9 +26,42 @@ $color-delhidribbble: #EC4989;
 $color-bic: #0093E7;
 $color-icons: #3B3F41;
 $color-zomato: #CB202D;
+$color-teamsanskrit: #2E5DF8;
+$color-socialchess: #333333;
+$color-richie: #5A696D;
 
 $color-iot-grad-bg: linear-gradient(0deg, #FF273E 0%, #FF7957 24%, #FFFFFF 34%);
 $color-iot-grad: linear-gradient(0deg, #FF273E 0%, #FF7957 100%);
+
+.richie .projecttag{
+  background-color: $color-richie;
+}
+.richie .readmore{
+  background-image: url(../../assets/img/grad/richie.png);
+-webkit-box-shadow: 0px 15px 45px -25px $color-richie;
+-moz-box-shadow: 0px 15px 45px -25px $color-richie;
+box-shadow: 0px 15px 45px -25px $color-richie;
+}
+
+.socialchess .projecttag{
+  background-color: $color-socialchess;
+}
+.socialchess .readmore{
+  background-image: url(../../assets/img/grad/socialchess.png);
+-webkit-box-shadow: 0px 15px 45px -25px $color-socialchess;
+-moz-box-shadow: 0px 15px 45px -25px $color-socialchess;
+box-shadow: 0px 15px 45px -25px $color-socialchess;
+}
+
+.teamsanskrit .projecttag{
+  background-color: $color-teamsanskrit;
+}
+.teamsanskrit .readmore{
+  background-image: url(../../assets/img/grad/teamsanskrit.png);
+-webkit-box-shadow: 0px 15px 45px -25px $color-teamsanskrit;
+-moz-box-shadow: 0px 15px 45px -25px $color-teamsanskrit;
+box-shadow: 0px 15px 45px -25px $color-teamsanskrit;
+}
 
 .zomato .projecttag{
   background-color: $color-zomato;
@@ -128,6 +161,30 @@ box-shadow: 0px 15px 45px -25px $color-pmo;
   -webkit-box-shadow: 0px 15px 45px -25px $color-jobsplane;
   -moz-box-shadow: 0px 15px 45px -25px $color-jobsplane;
   box-shadow: 0px 15px 45px -25px $color-jobsplane;
+}
+
+.invbtn{
+  margin:auto;
+  width: 200px;
+  text-align: center;
+  font-family: $font-stack1;
+  text-transform:uppercase;
+  font-size: 12px;
+  border-radius: 32px;
+  background-color: #eee;
+  color: #333;
+  padding: 10px 16px 10px 16px;
+}
+
+.invbtn:hover{
+  text-decoration: underline;
+  border: 1px solid #0000ff;
+  padding: 9px 16px 9px 16px;
+}
+
+.invbtn a{
+  text-decoration: none;
+  color: #333;
 }
 
 .cardsectionlabel{
